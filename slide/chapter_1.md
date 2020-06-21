@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 # テーマ
 theme: default
 # 
@@ -8,22 +8,17 @@ _class: lead
 paginate: true 
 backgroundColor: #fff
 # backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+
 ---
+<!-- _paginate: false -->
 
 # **入門ゼミ2020　Calliope講座#1**
 
 2020年 7月 某日
 
-<div style="text-align:right">
+
 M1　末松 天地
-
 天野 哲
-</div>
-<!-- どうやって右寄せにしたらいいか分かりませんでした -->
-
-    
-
-<!-- https://marp.app/ -->
 
 ---
 
@@ -33,33 +28,22 @@ M1　末松 天地
 3. 要素技術
 4. 設備利用率の考え方
 5. Calliope のインストール
-
 ---
-# ゼミ資料つくる人
 
-- 末松天地
-- 天野哲 [Blog](https://tetsu26.net/blog/)
-
-[] チェックボックスはなぜかプレビューでうまく表示されない
+# 3. 要素技術
+Calliopeでは様々な発電所や熱プラントを扱うことができる。ここでは日本でよく用いられている発電所について説明する。
 
 ---
 
-# How to write slides
+## <!-- fit -->コンバインドサイクルガスタービン発電 (ccgt)
 
-Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
+ガスタービンからの排気から熱を回収し、回収熱でもう一度発電を行うため、発電効率が高い。
 
-```markdown
-# Slide 1
+![80%](images/ccgt.jpg)
 
-foobar
+<!-- _footer: ":information_source: https://www.mhps.com/jp/products/gtcc/" -->
 
 ---
 
-# Slide 2
-
-foobar
-```
----
-
-
+# 5. Calliope のインストール
 
