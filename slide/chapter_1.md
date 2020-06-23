@@ -8,22 +8,17 @@ _class: lead
 paginate: true 
 backgroundColor: #fff
 # backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+
 ---
+<!-- _paginate: false -->
 
 # **入門ゼミ2020　Calliope講座#1**
 
 2020年 7月 某日
 
-<div style="text-align:right">
+
 M1　末松 天地
-
 天野 哲
-</div>
-<!-- どうやって右寄せにしたらいいか分かりませんでした -->
-
-    
-
-<!-- https://marp.app/ -->
 
 ---
 
@@ -33,33 +28,52 @@ M1　末松 天地
 3. 要素技術
 4. 設備利用率の考え方
 5. Calliope のインストール
-
----
-# ゼミ資料つくる人
-
-- 末松天地
-- 天野哲 [Blog](https://tetsu26.net/blog/)
-
-[] チェックボックスはなぜかプレビューでうまく表示されない
-
 ---
 
-# How to write slides
+# 3. 要素技術
+Calliopeでは様々な発電所や熱プラントを扱うことができる。ここでは日本でよく用いられている発電所について説明する。
 
-Split pages by horizontal ruler (`---`). It's very simple! :satisfied:
-
-```markdown
-# Slide 1
-
-foobar
+- 火力発電
+    - 汽力
+    - ガスタービン
+    - 内燃
+- 水力発電
+- 原子力発電
+- 再エネ発電
 
 ---
 
-# Slide 2
+## <!-- fit -->コンバインドサイクルガスタービン発電 (ccgt)
 
-foobar
-```
+ガスタービンからの排気から熱を回収し、回収熱でもう一度発電を行うため、発電効率が高い。
+
+![80%](images/ccgt.jpg)
+
+<!-- _footer: ":information_source: https://www.mhps.com/jp/products/gtcc/" -->
+
 ---
 
+# 5. Calliope のインストール
+## Steps
+
+1. Anaconda のインストール
+1. Visual Studio Code のインストール
+1. PowerShell の設定と基本的なコマンド
+1. Calliopeのインストール
+
+---
+
+# 5.1 Anaconda のインストール
 
 
+---
+
+# 5.2 Visual Studio Code のインストール
+
+---
+
+# 5.3 PowerShell の設定と基本的なコマンド
+
+---
+
+# 5.4 Calliopeのインストール
