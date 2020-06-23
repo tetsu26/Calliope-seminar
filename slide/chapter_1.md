@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 # テーマ
 theme: default
 # 
@@ -46,4 +46,26 @@ Calliopeでは様々な発電所や熱プラントを扱うことができる。
 ---
 
 # 5. Calliope のインストール
+## Steps
 
+1. Anaconda のインストール
+1. Visual Studio Code のインストール
+1. PowerShell の設定と基本的なコマンド
+1. Calliopeのインストール
+
+---
+
+# 5.1 Anaconda のインストール
+
+
+---
+
+# 5.2 Visual Studio Code のインストール
+
+---
+
+# 5.3 PowerShell の設定と基本的なコマンド
+
+---
+
+# 5.4 Calliopeのインストール
