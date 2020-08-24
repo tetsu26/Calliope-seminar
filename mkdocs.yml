@@ -1,14 +1,14 @@
 site_name: Calliope-seminar
 theme:
-  name: readthedocs
+  name: material
   # custom_dir: 'theme'
-  # language: 'ja'
-#   feature:
-#     tabs: true
+  language: 'ja'
+  feature:
+    tabs: true
 # theme: readthedocs
 nav:
   - Home: README.md
-  - extensions:
+  - contents:
     - chapter_1.md
 
 extra:
@@ -29,15 +29,10 @@ extra_css:
 markdown_extensions:
   - admonition
   - footnotes
-  #- fontawesome_markdown
   - def_list
   - pymdownx.smartsymbols
   - pymdownx.keys
   - codehilite:
-      use_pygments: true
-      noclasses: true
-      pygments_style: monokai
       linenums: true
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
-      # emoji_generator: !!python/name:pymdownx.emoji.to_alt

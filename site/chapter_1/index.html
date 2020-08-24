@@ -1,110 +1,651 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>入門ゼミ2020　Calliope講座#1 - Calliope-seminar</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="//fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet" />
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" />
-  <link href="../css/extra.css" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "\u5165\u9580\u30bc\u30df2020\u3000Calliope\u8b1b\u5ea7#1";
-    var mkdocs_page_input_path = "chapter_1.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Calliope-seminar</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.8">
+    
+    
+      
+        <title>入門ゼミ2020 Calliope講座#1 - Calliope-seminar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.01afc2df.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2020-calliope1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Calliope-seminar" class="md-header-nav__button md-logo" aria-label="Calliope-seminar">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">extensions</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">入門ゼミ2020　Calliope講座#1</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                </ul>
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Calliope-seminar
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              入門ゼミ2020　Calliope講座#1
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Calliope-seminar</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>extensions &raquo;</li>
-        
-      
-    
-    <li>入門ゼミ2020　Calliope講座#1</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  
-  <hr/>
+  </div>
 </div>
-          <div role="main">
-            <div class="section">
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Calliope-seminar" class="md-nav__button md-logo" aria-label="Calliope-seminar">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Calliope-seminar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      contents
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="contents" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        contents
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        入門ゼミ2020　Calliope講座#1
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="入門ゼミ2020 Calliope講座#1" class="md-nav__link md-nav__link--active">
+      入門ゼミ2020　Calliope講座#1
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    目次
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 要素技術
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 要素技術">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 火力発電
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 火力発電">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    汽力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ガスタービン
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コンバインドサイクル
+  </a>
+  
+    <nav class="md-nav" aria-label="コンバインドサイクル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccgt" class="md-nav__link">
+    コンバインドサイクルガスタービン発電 (CCGT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#igcc" class="md-nav__link">
+    石炭ガス化複合発電(IGCC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    内燃
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 水力発電
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 原子力発電
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4 再エネ発電
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 再エネ発電">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341" class="md-nav__link">
+    3.4.1 太陽光
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342" class="md-nav__link">
+    3.4.2 風力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343" class="md-nav__link">
+    3.4.3 その他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-calliope" class="md-nav__link">
+    5. Calliope のインストール
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Calliope のインストール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-anaconda" class="md-nav__link">
+    5.1 Anaconda のインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-visual-studio-code" class="md-nav__link">
+    5.2 Visual Studio Code のインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-powershell" class="md-nav__link">
+    5.3 PowerShell の設定と基本的なコマンド
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-calliope" class="md-nav__link">
+    5.4 Calliopeのインストール
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    目次
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 要素技術
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 要素技術">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 火力発電
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 火力発電">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    汽力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ガスタービン
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コンバインドサイクル
+  </a>
+  
+    <nav class="md-nav" aria-label="コンバインドサイクル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ccgt" class="md-nav__link">
+    コンバインドサイクルガスタービン発電 (CCGT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#igcc" class="md-nav__link">
+    石炭ガス化複合発電(IGCC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    内燃
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 水力発電
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    3.3 原子力発電
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4 再エネ発電
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 再エネ発電">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341" class="md-nav__link">
+    3.4.1 太陽光
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342" class="md-nav__link">
+    3.4.2 風力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343" class="md-nav__link">
+    3.4.3 その他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-calliope" class="md-nav__link">
+    5. Calliope のインストール
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Calliope のインストール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#51-anaconda" class="md-nav__link">
+    5.1 Anaconda のインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-visual-studio-code" class="md-nav__link">
+    5.2 Visual Studio Code のインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-powershell" class="md-nav__link">
+    5.3 PowerShell の設定と基本的なコマンド
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#54-calliope" class="md-nav__link">
+    5.4 Calliopeのインストール
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
+                
+                
+                  
+                
+                
                 <h1 id="2020-calliope1">入門ゼミ2020　Calliope講座#1</h1>
 <p>2020年 7月</p>
 <p>M1　末松 天地  天野 哲</p>
-<h1 id="_1">目次</h1>
+<h2 id="_1">目次</h2>
 <div class="toc">
 <ul>
-<li><a href="#2020-calliope1">入門ゼミ2020　Calliope講座#1</a></li>
+<li><a href="#2020-calliope1">入門ゼミ2020　Calliope講座#1</a><ul>
 <li><a href="#_1">目次</a></li>
 <li><a href="#3">3. 要素技術</a><ul>
 <li><a href="#31">3.1 火力発電</a><ul>
@@ -137,8 +678,10 @@
 <li><a href="#53-powershell">5.3 PowerShell の設定と基本的なコマンド</a></li>
 <li><a href="#54-calliope">5.4 Calliopeのインストール</a></li>
 </ul>
+</li>
+</ul>
 </div>
-<h1 id="3">3. 要素技術</h1>
+<h2 id="3">3. 要素技術</h2>
 <p>Calliopeでは様々な発電所や熱プラントを扱うことができる。ここでは日本でよく用いられている発電所について説明する。</p>
 <ul>
 <li>3.1 火力発電<ul>
@@ -157,96 +700,116 @@
 </ul>
 </li>
 </ul>
-<h2 id="31">3.1 火力発電</h2>
-<h3 id="_2">汽力</h3>
+<h3 id="31">3.1 火力発電</h3>
+<h4 id="_2">汽力</h4>
 <p>汽力発電とは、高圧の水蒸気でタービンを回して電力へ変換する発電方法である。義務教育で習う火力発電所の仕組みは汽力発電であることが多い。高圧の水蒸気を作れれば発電できるため、多種多様な燃料を使うことができる。代表的な燃料として、石油、天然ガス、高炉ガス、石炭、コークス、木質チップがある。発電効率は40％ほど。</p>
 <p><img alt="汽力発電" src="../images/bol.png" /></p>
 <p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" />https://www.jera.co.jp/business/thermal-power/type</p>
-<h3 id="_3">ガスタービン</h3>
+<h4 id="_3">ガスタービン</h4>
 <p>ガスタービン発電とは、圧縮空気と燃料ガスを燃焼器で燃焼させ、発生した高温高圧の排気ガスをガスタービンに吹き付けて発電する発電方式である。航空機に使われているジェットエンジンに発電機を取り付けたようなイメージである。非常に高速に回転しているガスタービンに排気ガスを直接吹き付けるため、不純物の少ない燃料しか使用できない。天然ガスや灯油、軽油が主に使われている。</p>
-<h3 id="_4">コンバインドサイクル</h3>
+<h4 id="_4">コンバインドサイクル</h4>
 <p>コンバインドサイクル発電とは、ガスタービン発電の排熱で汽力発電を行う発電方法である。</p>
-<h4 id="ccgt">コンバインドサイクルガスタービン発電 (CCGT)</h4>
+<h5 id="ccgt">コンバインドサイクルガスタービン発電 (CCGT)</h5>
 <p>ガスタービンからの排気から熱を回収し、回収熱でもう一度発電を行うため、発電効率60%程度と高い。</p>
 <p><img alt="CCGT模式図" src="../images/ccgt.jpg" /></p>
 <p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> https://www.mhps.com/jp/products/gtcc/</p>
-<h4 id="igcc">石炭ガス化複合発電(IGCC)</h4>
+<h5 id="igcc">石炭ガス化複合発電(IGCC)</h5>
 <p>石炭をガス化し、それを用いてコンバインドサイクル発電を行う。発電効率は50％程度と従来の石炭火力と比較して約10％よい。</p>
-<h3 id="_5">内燃</h3>
+<h4 id="_5">内燃</h4>
 <p>内燃発電とは所謂「エンジン」を用いた発電方法である。燃料は軽油やガソリン、LPGが用いられる。島しょ部に多い。</p>
-<h2 id="32">3.2 水力発電</h2>
+<h3 id="32">3.2 水力発電</h3>
 <p>水力発電は高所から落下する水のエネルギーを利用して発電する。再エネ発電の一種ではあるが、設置できる場所が限られており、今後の新設は見込まれない。ただ発電するものと、夜間などの余剰電力で水をくみ上げ、電力需要がひっ迫した際にくみ上げておいた水で発電する「揚水式水力発電所」というものが存在する。</p>
 <p><img src="images\yosui.gif" alt="揚水" style="zoom:67%;" /></p>
 <p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" />https://www.fepc.or.jp/enterprise/hatsuden/water/yousuishiki/index.html</p>
-<h2 id="33">3.3 原子力発電</h2>
-<h2 id="34">3.4 再エネ発電</h2>
-<h3 id="341">3.4.1 太陽光</h3>
-<h3 id="342">3.4.2 風力</h3>
-<h3 id="343">3.4.3 その他</h3>
-<h1 id="5-calliope">5. Calliope のインストール</h1>
-<h2 id="steps">Steps</h2>
+<h3 id="33">3.3 原子力発電</h3>
+<h3 id="34">3.4 再エネ発電</h3>
+<h4 id="341">3.4.1 太陽光</h4>
+<h4 id="342">3.4.2 風力</h4>
+<h4 id="343">3.4.3 その他</h4>
+<h2 id="5-calliope">5. Calliope のインストール</h2>
+<h3 id="steps">Steps</h3>
 <ol>
 <li>Anaconda のインストール</li>
 <li>Visual Studio Code のインストール</li>
 <li>PowerShell の設定と基本的なコマンド</li>
 <li>Calliopeのインストール</li>
 </ol>
-<h1 id="51-anaconda">5.1 Anaconda のインストール</h1>
+<h2 id="51-anaconda">5.1 Anaconda のインストール</h2>
 <p>Anaconda3をインストールする。</p>
-<h1 id="52-visual-studio-code">5.2 Visual Studio Code のインストール</h1>
+<h2 id="52-visual-studio-code">5.2 Visual Studio Code のインストール</h2>
 <p>ググって</p>
-<h1 id="53-powershell">5.3 PowerShell の設定と基本的なコマンド</h1>
+<h2 id="53-powershell">5.3 PowerShell の設定と基本的なコマンド</h2>
 <p>ターミナルとしてPowerShellを使う。Windows環境ではコマンドプロンプトのほうがメジャーであるが、言語として古く、更新もされていないためお勧めしない。</p>
-<h1 id="54-calliope">5.4 Calliopeのインストール</h1>
+<h2 id="54-calliope">5.4 Calliopeのインストール</h2>
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
   </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
       
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <script src="../js/extra.js"></script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
       
-    </span>
-</div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../js/extra.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+    
+  </body>
 </html>
