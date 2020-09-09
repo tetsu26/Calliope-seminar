@@ -1,4 +1,0 @@
-# Calliope-seminar
-
-# テスト
-プッシュしてみる

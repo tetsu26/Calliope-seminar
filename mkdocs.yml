@@ -1,0 +1,38 @@
+site_name: Calliope-seminar
+theme:
+  name: material
+  # custom_dir: 'theme'
+  language: 'ja'
+  feature:
+    tabs: true
+# theme: readthedocs
+nav:
+  - Home: README.md
+  - contents:
+    - chapter_1.md
+
+extra:
+  search:
+    language: 'ja'
+
+extra_javascript: 
+    - "js/extra.js"
+    - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"
+  # - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/extra.css"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - def_list
+  - pymdownx.smartsymbols
+  - pymdownx.keys
+  - codehilite:
+      linenums: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
