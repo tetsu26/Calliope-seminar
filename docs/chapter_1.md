@@ -97,6 +97,8 @@ Calliopeでは様々な発電所や熱プラントを扱うことができる。
 
 ### 3.3 原子力発電
 
+無限のエネルギー。ご存じのように今後の増設は見込めない。
+
 ### 3.4 再エネ発電
 
 #### 3.4.1 太陽光
@@ -111,12 +113,63 @@ Calliopeでは様々な発電所や熱プラントを扱うことができる。
 
 Anaconda3をインストールする。[ここから](https://www.anaconda.com/products/individual)ダウンロードできる。
 
+PCにAnacondaをインストールしたら、Pythonパッケージのインストールに```pip```を使うと環境が破壊されてしまうことがあるので、```conda```を使うようにする。たいていのパッケージは```conda```でも提供されている。万が一```pip```コマンドでパッケージをインストールした後に環境が動かなくなった際は、Anacondaを再インストールすることが手っ取り早い解決策である。 [参考サイト](http://onoz000.hatenablog.com/entry/2018/02/11/142347)
+
+!!!Warning
+    とか言ってこの文章をビルドしているmkdocsパッケージはpipでしかインストールできない
+
 ## 5.2 Visual Studio Code のインストール
 
 [ここから](https://code.visualstudio.com/)ダウンロードできる。どうしてもEmacsなど他のエディタがいい人は黙ってて。
 
 ## 5.3 PowerShell の設定と基本的なコマンド
 
-ターミナルとしてPowerShellを使う。Windows環境ではコマンドプロンプトのほうがメジャーであるが、言語として古く、更新もされていないためお勧めしない。
+ターミナルとしてPowerShellを使う。Windows環境ではコマンドプロンプトのほうがメジャーであるが、言語として古く、更新もされていないためお勧めしない。Mac & Linuxの人は標準のターミナルを使えば大丈夫。
+
+PowerShellはWindowsに最初からインストールされているため、インストールする必要はない。しかし、Windowsに同梱されているPowershellは最新版ではないので、気になる人は[ここから](https://github.com/PowerShell/PowerShell)ダウンロード・インストールできる。
+
+### 5.3.1 PowerShell の設定
+
+PowerShellのスクリプトを実行できるように実行ポリシーを変更する。
+
+1. PowerShellを管理者権限で立ち上げる。
+1. ```Set-ExecutionPolicy RemoteSigned```　をコピペして実行。PowerShellを閉じる。
+
+PowerShellにAnacondaへのパスを通す。
+
+1. スタートメニューのAnacondaフォルダにある「Anaconda Powershell Prompt」を立ち上げる。
+1. ```conda init``` をコピペして実行。「Anaconda Powershell Prompt」を閉じる。
+1. PowerShellを起動して```conda -V```を入力。エラーが出なければおｋ！
+
+### 5.3.2 PowerShell の基本的なコマンド
+
+PowerShellのコマンド（正式にはコマンドレットと呼ぶ）は、```<動詞>-<名詞>```の命名規則に従っている。例えば、ディレクトリ移動する時のコマンドは```Set-Location```と定義されている。しかし、いちいちディレクトリ移動の度にこの長いコマンドを入力していると日が暮れるので、よく使うコマンドにはエイリアスが定義されており、ディレクトリ移動には```cd```や```chdir```などが定義されている。そのため、基本的な操作はLinuxと同じコマンドで操作できる。おそらく学部生時にLinuxの基本的なコマンドは習っていると思うが、一応軽く紹介しておく。
+
+| コマンド | 説明 |
+|  ----   | ---- |
+| cd | ディレクトリ移動 |
+| ls | フォルダの内容を表示する |
+| mv | ファイルを移動 |
+| cp | ファイルなどをコピーする |
+| mkdir | フォルダを作成する |
+| rm | ファイルやフォルダを削除する |
+| pwd | 現在いる場所を表示する |
 
 ## 5.4 Calliopeのインストール
+
+PowerShellを開き、以下のコマンドを実行する。
+```
+conda create -c conda-forge -n calliope calliope
+```
+
+Calliopeを使うときは以下のコマンドを入力してcalliope環境を起動する。
+```
+conda activate calliope
+```
+PowerShellの先頭に(calliope)が表示されていれば準備完了！
+
+## 5.5 Gurobiのインストール
+
+Calliopeの実行には何かしらのソルバーが必要です。大学のPCにインストールするときは、[このサイト](https://qiita.com/keisukesato-ac/items/b0425a879622b99a2610)を参考にGurobiをインストールして、無償のアカデミックライセンスを取得してください。
+
+Gurobiのアカデミックライセンスを取得できない時（大学LANからアクセスできないなど）は、CPLEXの学生版でも大丈夫です。
