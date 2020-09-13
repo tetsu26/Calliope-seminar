@@ -10,6 +10,7 @@ theme:
 nav:
   - README.md
   - chapter_1.md
+  - chapter_2.md
 
 extra:
   search:
