@@ -3,6 +3,9 @@
 オープンソースエネルギーモデリングソフト「Calliope（カリオペ）」のB4向け入門資料です。
 ご自由にお使いください。
 
+* [1日目資料](chapter_1.md)
+* [2日目資料](chapter_2.md)
+
 contact: [Nakata Lab](http://www.eff.most.tohoku.ac.jp/)
 
 ## この文章のビルド方法
