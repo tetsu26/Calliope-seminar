@@ -218,6 +218,8 @@ PCにAnacondaをインストールしたら、Pythonパッケージのインス�
 
 [ここから](https://code.visualstudio.com/)ダウンロードできる。どうしてもEmacsなど他のエディタがいい人は黙ってて。
 
+[Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)という拡張機能を入れるとUIが日本語になる。
+
 ## 5.3 PowerShell の設定と基本的なコマンド
 
 ターミナルとしてPowerShellを使う。Windows環境ではコマンドプロンプトのほうがメジャーであるが、言語として古く、更新もされていないためお勧めしない。Mac & Linuxの人は標準のターミナルを使えば大丈夫。

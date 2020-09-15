@@ -1,11 +1,13 @@
 site_name: Calliope-seminar
-repo_uri: https://github.com/tetsu26/Calliope-seminar
 copyright: Nakata Laboratory, Tohoku University 
 theme:
   name: material
   language: 'ja'
   feature:
     tabs: true
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/git-alt
 
 nav:
   - README.md
@@ -18,14 +20,13 @@ extra:
   
 
 extra_javascript: 
-    - "js/extra.js"
-    - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"
   # - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   
 extra_css:
   - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
   - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
-  - "extra.css"
+  - "css/custom.css"
   - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
 
 markdown_extensions:
@@ -34,7 +35,12 @@ markdown_extensions:
   - def_list
   - pymdownx.smartsymbols
   - pymdownx.keys
+  - fontawesome_markdown
   - codehilite:
       linenums: true
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+google_analytics:
+  - 'UA-177930089-1'
+  - 'auto'
