@@ -4,6 +4,14 @@
 
 # Note: '-start' and '-end' is used in tutorial documentation only
 
+# supply_power_plus-start
+tech_groups:
+    supply_power_plus:
+        essentials:
+            parent: supply_plus
+            carrier: electricity
+# supply_power_plus-end
+
 techs:
 
     ##
@@ -31,33 +39,39 @@ techs:
                 om_con: 0.02  # USD per kWh
     # ccgt-end
 
-    # csp-start
-    csp:
+    # pv-start
+    pv:
         essentials:
-            name: 'Concentrating solar power'
+            name: 'Solar photovoltaic power'
             color: '#F9CF22'
-            parent: supply_plus
-            carrier_out: power
+            parent: supply_power_plus
         constraints:
-            storage_cap_max: 614033
-            energy_cap_per_storage_cap_max: 1
-            storage_loss: 0.002
-            resource: file=csp_resource.csv
-            resource_unit: energy_per_area
-            energy_eff: 0.4
-            parasitic_eff: 0.9
-            resource_area_max: inf
-            energy_cap_max: 10000
+            resource_unit: energy
+            energy_eff: 1
             lifetime: 25
         costs:
             monetary:
                 interest_rate: 0.10
-                storage_cap: 50
-                resource_area: 200
-                resource_cap: 200
                 energy_cap: 1000
                 om_prod: 0.002
-    # csp-end
+    # pv-end
+
+    # offshore-wind-start
+    offwind:
+        essentials:
+            name: 'Offshore wind power'
+            color: '#326da8'
+            parent: supply_power_plus
+        constraints:
+            resource_unit: energy
+            energy_eff: 1
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.10
+                energy_cap: 1000
+                om_prod: 0.002
+    # pv-end
 
     ##
     # Storage
@@ -88,10 +102,10 @@ techs:
     # demand-start
     demand_power:
         essentials:
-            name: 'Power demand'
+            name: 'Electrical demand'
             color: '#072486'
             parent: demand
-            carrier: power
+            carrier: electricity
     # demand-end
 
     ##
@@ -104,26 +118,12 @@ techs:
             name: 'AC power transmission'
             color: '#8465A9'
             parent: transmission
-            carrier: power
+            carrier: electricity
         constraints:
-            energy_eff: 0.85
+            energy_eff: 0.95
             lifetime: 25
         costs:
             monetary:
                 interest_rate: 0.10
-                energy_cap: 200
-                om_prod: 0.002
 
-    free_transmission:
-        essentials:
-            name: 'Local power transmission'
-            color: '#6783E3'
-            parent: transmission
-            carrier: power
-        constraints:
-            energy_cap_max: inf
-            energy_eff: 1.0
-        costs:
-            monetary:
-                om_prod: 0
     # transmission-end

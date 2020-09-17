@@ -3,53 +3,153 @@
 ##
 
 locations:
-    # region-1-start
-    region1:
-        coordinates: {lat: 40, lon: -2}
+    # prefecture-start
+    akita:
+        coordinates: {lat: 39.7186, lon: 140.102334}
         techs:
             demand_power:
                 constraints:
-                    resource: file=demand-1.csv:demand
-            ccgt:
+                    resource: file=demand.csv:akita
+            pv:
                 constraints:
-                    energy_cap_max: 30000 # increased to ensure no unmet_demand in first timestep
-    # region-1-end
-    # other-locs-start
-    region2:
-        coordinates: {lat: 40, lon: -8}
+                    resource: file=pv_potential.csv:akita
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:akita
+
+    aomori:
+        coordinates: {lat: 40.824912, lon: 140.739977}
         techs:
             demand_power:
                 constraints:
-                    resource: file=demand-2.csv:demand
-            battery:
+                    resource: file=demand.csv:aomori
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:aomori
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:aomori
 
-    region1-1.coordinates: {lat: 41, lon: -2}
-    region1-2.coordinates: {lat: 39, lon: -1}
-    region1-3.coordinates: {lat: 39, lon: -2}
-
-    region1-1, region1-2, region1-3:
+    fukushima:
+        coordinates: {lat: 37.750109, lon: 140.466692}
         techs:
-            csp:
-    # other-locs-end
+            demand_power:
+                constraints:
+                    resource: file=demand.csv:fukushima
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:fukushima
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:fukushima
+    
+    iwate:
+        coordinates: {lat: 39.703469, lon: 141.152589}
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=demand.csv:iwate
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:iwate
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:iwate
 
+    miyagi:
+        coordinates: {lat: 38.268672, lon: 140.87217}
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=demand.csv:miyagi
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:miyagi
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:miyagi
+
+    yamagata:
+        coordinates: {lat: 38.240409, lon: 140.363541}
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=demand.csv:yamagata
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:yamagata
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:yamagata
+
+    niigata:
+        coordinates: {lat: 37.901983, lon: 139.023298}
+        techs:
+            demand_power:
+                constraints:
+                    resource: file=demand.csv:niigata
+            pv:
+                constraints:
+                    resource: file=pv_potential.csv:niigata
+            offwind:
+                constraints:
+                    resource: file=offwind_potential.csv:niigata
+    # prefecture-end
+    
 ##
 # TRANSMISSION CAPACITIES
 ##
 
 links:
     # links-start
-    region1,region2:
+    akita,aomori:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 10000
-    region1,region1-1:
+                    energy_cap_max: 1.34 # GWh
+    aomori,iwate:
         techs:
-            free_transmission:
-    region1,region1-2:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 17.3
+    akita,iwate:
         techs:
-            free_transmission:
-    region1,region1-3:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 0.66
+    akita,miyagi:
         techs:
-            free_transmission:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 9.04
+    miyagi,iwate:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 27.1
+    miyagi,yamagata:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 2.39
+    miyagi,fukushima:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 10.4
+    miyagi,niigata:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 3.77
+    fukushima,yamagata:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 1.3
+    niigata,yamagata:
+        techs:
+            ac_transmission:
+                constraints:
+                    energy_cap_max: 7.54
     # links-end
