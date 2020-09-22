@@ -178,3 +178,12 @@ code test_model
 
 ### `model.yaml`を編集
 
+
+ソルバーに`gurobi`を指定する。
+
+### `locations.yaml`を編集
+
+
+
+### `techs.yaml`を編集
+

@@ -59,8 +59,18 @@
 <!-- 図 -->
   ![時間の表現](images/time_expression.png "periodの説明")
 
+### 2.5 Calliopeの内部処理
+
+Calliopeの内部処理について紹介する。Calliopeは以下の図のようなフローで処理している。
+
+![calliope_workflow](images/calliope_workflow_basic.png)
+
+Calliopeとはそもそも、入力されたデータを線形ソルバーでの最適化のために準備し、結果を分析・保存するためのソフトウェアである。データ入力は、次の入門ゼミ資料で取り上げるが、YAMLとCSVという形式で行われる。入力されたデータはruamel、pandas、xarrayといったライブラリで処理された後、Pyomoに渡される。Pyomoは最適化モデルを生成する、ソフトウェアパッケージであり、GAMSのようなシステムである。Pyomoは、処理したデータを最適化ソルバーが読める形式に変換し、外部の最適化ソルバー（Gurobi、CPELX、GLPKなど）に流す。最適化ソルバーから帰ってきた処理結果は再びpandasとxarrayによって処理されて出力される。また、Plotlyを使って可視化も行うことができる。
+
 ### 参考文献
 :information_source: 中田研のMETA-Netゼミ資料
+
+<!-- 要素技術のセクション不要説が今全俺の中で持ち上がっている
 
 ## 3. 要素技術
 Calliopeでは様々な発電所や熱プラントを扱うことができる。ここでは日本でよく用いられている発電所について説明する。
@@ -117,6 +127,8 @@ Calliopeでは様々な発電所や熱プラントを扱うことができる。
 #### 3.4.2 風力
 
 #### 3.4.3 その他
+
+-->
 
 ## 4. 電力需給に関する基礎知識
 
@@ -185,6 +197,7 @@ $$
 ![energy_mix](images\CIYHnWyWgAANrVb.png)
 
 :information_source: [IEAのtwitter](https://twitter.com/iea/status/614186782335365120)
+
 
 ## 5. Calliope のインストール
 
