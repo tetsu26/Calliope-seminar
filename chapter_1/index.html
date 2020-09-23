@@ -812,9 +812,9 @@ $$
 </table>
 <p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> 臼井さんのゼミ資料</p>
 <dl>
-<dt>Load Factor</dt>
+<dt><code>Load Factor</code></dt>
 <dd>発電設備が設備容量の何%にあたる出力で発電するかを表す数値。</dd>
-<dt>Availability Factor</dt>
+<dt><code>Availability Factor</code></dt>
 <dd>発電設備が稼働している時間がフル稼働の何%にあたるかを表す数値。例えば、急激な出力調整ができない原子力発電では比較的高いが、日照時間に左右される太陽光発電では低くなる。</dd>
 </dl>
 <p>Calliopeでエネルギーシステムモデルを作成する場合は、各発電設備について必ず指定しなければならないパラメータであり、結果にも影響を及ぼすので非常に重要。</p>
@@ -826,11 +826,11 @@ $$
 <h3 id="43">4.3 電源構成（エネルギーミクス）</h3>
 <p>電力需要は季節や時間によって刻々と変化するが、現状、大量に蓄電しておくことは難しいため、過不足がないように供給量を追随させる必要がある。このため、電力会社はエネルギー資源の特性を活かした電源構成で電力の供給を行っている。ここでいう「特性」とは様々な観点での分類が考えられるが、出力変動の可変性に応じて「ベースロード電源」、「ミドル電源」、「ピーク電源」がある。</p>
 <dl>
-<dt>ベースロード(Baseload)電源</dt>
+<dt><code>ベースロード(Baseload)電源</code></dt>
 <dd>運用コストが安く、昼夜問わず安定して稼働できる電源。石炭火力発電、流込式の水力発電、原子力発電、地熱発電など。ただし、建設費は高い。</dd>
-<dt>ミドル(Mid-load)電源</dt>
+<dt><code>ミドル(Mid-load)電源</code></dt>
 <dd>ベースロード電源の次に発電コストが安く、ベースロード電源だけでは需要に対応できない場合に稼働する電源。出力調整が可能で、LNG火力発電などがこれ。</dd>
-<dt>ピークロード(Peak load)電源</dt>
+<dt><code>ピークロード(Peak load)電源</code></dt>
 <dd>発電コストは高いが、出力変動が容易な電源。石油火力発電や揚水発電。</dd>
 </dl>
 <p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://www.tepco.co.jp/electricity/energy_situation/bestmix.html">エネルギーミックス｜エネルギー事情｜東京電力ホールディングス株式会社</a></p>
@@ -840,10 +840,6 @@ $$
 <h2 id="51-anaconda">5.1 Anaconda のインストール</h2>
 <p>Anaconda3をインストールする。<a href="https://www.anaconda.com/products/individual">ここから</a>ダウンロードできる。</p>
 <p>PCにAnacondaをインストールしたら、Pythonパッケージのインストールに<code>pip</code>を使うと環境が破壊されてしまうことがあるので、<code>conda</code>を使うようにする。たいていのパッケージは<code>conda</code>でも提供されている。万が一<code>pip</code>コマンドでパッケージをインストールした後に環境が動かなくなった際は、Anacondaを再インストールすることが手っ取り早い解決策である。 <a href="http://onoz000.hatenablog.com/entry/2018/02/11/142347">参考サイト</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>とか言ってこの文章をビルドしているmkdocsパッケージはpipでしかインストールできない</p>
-</div>
 <h2 id="52-visual-studio-code">5.2 Visual Studio Code のインストール</h2>
 <p><a href="https://code.visualstudio.com/">ここから</a>ダウンロードできる。どうしてもEmacsなど他のエディタがいい人は黙ってて。</p>
 <p><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja">Japanese Language Pack for Visual Studio Code</a>という拡張機能を入れるとUIが日本語になる。</p>

@@ -198,6 +198,19 @@
     この文章のビルド方法
   </a>
   
+    <nav class="md-nav" aria-label="この文章のビルド方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anacondapython" class="md-nav__link">
+    AnacondaでPythonをインストールしている場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -259,6 +272,19 @@
     この文章のビルド方法
   </a>
   
+    <nav class="md-nav" aria-label="この文章のビルド方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anacondapython" class="md-nav__link">
+    AnacondaでPythonをインストールしている場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -286,6 +312,10 @@
 </ul>
 <p>contact: <a href="http://www.eff.most.tohoku.ac.jp/">Nakata Lab</a></p>
 <h2 id="_1">この文章のビルド方法</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>conda環境下で<code>pip</code>を使うと環境が破壊されてしまう可能性があるので、その場合は<a href=".###AnacondaでPythonをインストールしている場合">次節の手順</a>でインストールする。</p>
+</div>
 <p>mkdocsをインストール</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -317,6 +347,28 @@
 </td></tr></table>
 
 <p>上記コマンドを入力すると自動的にローカルサーバーが立てられ、初期設定では<a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>にアクセスすれば作成したドキュメントが表示される。ドキュメントを保存すると自動的にビルドされ、更新される。</p>
+<h3 id="anacondapython">AnacondaでPythonをインストールしている場合</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">conda install -c conda-forge mkdocs</span>
+<span class="err">conda install -c conda-forge pymdown-extensions</span>
+<span class="err">conda install -c conda-forge mkdocs-material</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>でmkdocsをインストールする。<strong>なお、<code>fontawesome_markdown</code>だけは<code>conda</code>からインストールできない</strong>ので</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">pip install fontawesome_markdown</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>でよい。今のところ、<code>conda</code>と<code>pip</code>の混用により末松のconda環境では問題は起きていないが、心配な人はmkdocs用に仮想環境を作ってからインストールすれば万一の被害を低減できる。その場合は、</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">conda create -n &lt;任意の仮想環境名&gt;</span>
+<span class="err">conda activate &lt;任意の仮想環境名&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>をパッケージのインストール前に実行すればよい。</p>
 <p><a href="https://qiita.com/mebiusbox2/items/a61d42878266af969e3c">参考にしたサイト</a></p>
                 
               
