@@ -106,9 +106,9 @@ $$
 
 Calliopeでエネルギーシステムモデルを作成する場合は、各発電設備について必ず指定しなければならないパラメータであり、結果にも影響を及ぼすので非常に重要。
 
-設備利用率を \\( IC \\) 、設備利用率を\\( CF \\)とすると、年間電力発電量は
+設備容量を \\( IC [\mathrm{kW}]\\) 、設備利用率を\\( CF \\)とすると、年間電力発電量は
 $$
-\mathrm{Annual power generation}[\mathrm{kWh}] = IC[\mathrm{kW}] \times 8760 ~[\mathrm{h}] \times 10^3 \times CF
+IC[\mathrm{kW}] \times 8760 ~[\mathrm{h}] \times CF
 $$
 で求められる。
 
