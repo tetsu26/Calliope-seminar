@@ -133,7 +133,7 @@ $$
 :information_source: [IEAのtwitter](https://twitter.com/iea/status/614186782335365120)
 
 
-## 3. Calliope のインストール
+## 3. 環境構築
 
 ## 3.1 Anaconda のインストール
 
