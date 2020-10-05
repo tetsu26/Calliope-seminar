@@ -55,6 +55,7 @@ locations:
             offwind:
                 constraints:
                     resource: file=offwind_potential.csv:iwate
+            ccgt:
 
     miyagi:
         coordinates: {lat: 38.268672, lon: 140.87217}
@@ -68,6 +69,7 @@ locations:
             offwind:
                 constraints:
                     resource: file=offwind_potential.csv:miyagi
+            ccgt:
 
     yamagata:
         coordinates: {lat: 38.240409, lon: 140.363541}
@@ -81,6 +83,7 @@ locations:
             offwind:
                 constraints:
                     resource: file=offwind_potential.csv:yamagata
+            ccgt:
 
     niigata:
         coordinates: {lat: 37.901983, lon: 139.023298}

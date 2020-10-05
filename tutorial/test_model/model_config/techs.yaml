@@ -24,7 +24,7 @@ techs:
             name: 'Combined cycle gas turbine'
             color: '#E37A72'
             parent: supply
-            carrier_out: power
+            carrier_out: electricity
         constraints:
             resource: inf
             energy_eff: 0.5
@@ -82,7 +82,7 @@ techs:
             name: 'Battery storage'
             color: '#3B61E3'
             parent: storage
-            carrier: power
+            carrier: electricity
         constraints:
             energy_cap_max: 1000  # kW
             storage_cap_max: inf
