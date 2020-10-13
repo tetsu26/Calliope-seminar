@@ -1,24 +1,11 @@
-##
-# TECHNOLOGY DEFINITIONS
-##
 
-# Note: '-start' and '-end' is used in tutorial documentation only
-
-# supply_power_plus-start
 tech_groups:
     supply_power_plus:
         essentials:
             parent: supply_plus
             carrier: electricity
-# supply_power_plus-end
 
 techs:
-
-    ##
-    # Supply
-    ##
-
-    # ccgt-start
     ccgt:
         essentials:
             name: 'Combined cycle gas turbine'
@@ -28,18 +15,16 @@ techs:
         constraints:
             resource: inf
             energy_eff: 0.5
-            energy_cap_max: 40000  # kW
-            energy_cap_max_systemwide: 100000  # kW
+            energy_cap_max: 1400000  # kW
+            energy_cap_max_systemwide: 10000000  # kW
             energy_ramping: 0.8
             lifetime: 25
         costs:
             monetary:
-                interest_rate: 0.10
-                energy_cap: 750  # USD per kW
-                om_con: 0.02  # USD per kWh
-    # ccgt-end
-
-    # pv-start
+                interest_rate: 0.02
+                energy_cap: 120000  # JPY per kW
+                om_con: 0.45  # JPY per kWh
+                om_annual: 20000 # JPY per kW
     pv:
         essentials:
             name: 'Solar photovoltaic power'
@@ -51,12 +36,9 @@ techs:
             lifetime: 25
         costs:
             monetary:
-                interest_rate: 0.10
-                energy_cap: 1000
-                om_prod: 0.002
-    # pv-end
-
-    # offshore-wind-start
+                interest_rate: 0.02
+                energy_cap: 294000 # JPY per kW
+                om_annual: 6000 # JPY per kW
     offwind:
         essentials:
             name: 'Offshore wind power'
@@ -68,51 +50,15 @@ techs:
             lifetime: 25
         costs:
             monetary:
-                interest_rate: 0.10
-                energy_cap: 1000
-                om_prod: 0.002
-    # pv-end
-
-    ##
-    # Storage
-    ##
-    # battery-start
-    battery:
-        essentials:
-            name: 'Battery storage'
-            color: '#3B61E3'
-            parent: storage
-            carrier: electricity
-        constraints:
-            energy_cap_max: 1000  # kW
-            storage_cap_max: inf
-            energy_cap_per_storage_cap_max: 4
-            energy_eff: 0.95  # 0.95 * 0.95 = 0.9025 round trip efficiency
-            storage_loss: 0  # No loss over time assumed
-            lifetime: 25
-        costs:
-            monetary:
-                interest_rate: 0.10
-                storage_cap: 200  # USD per kWh storage capacity
-    # battery-end
-
-    ##
-    # Demand
-    ##
-    # demand-start
+                interest_rate: 0.02
+                energy_cap: 565000 # JPY per kW
+                om_annual: 22500 # JPY per kW
     demand_power:
         essentials:
             name: 'Electrical demand'
             color: '#072486'
             parent: demand
             carrier: electricity
-    # demand-end
-
-    ##
-    # Transmission
-    ##
-
-    # transmission-start
     ac_transmission:
         essentials:
             name: 'AC power transmission'
@@ -124,6 +70,4 @@ techs:
             lifetime: 25
         costs:
             monetary:
-                interest_rate: 0.10
-
-    # transmission-end
+                interest_rate: 0.02

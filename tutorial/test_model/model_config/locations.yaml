@@ -104,55 +104,54 @@ locations:
 ##
 
 links:
-    # links-start
     akita,aomori:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 1.34 # GWh
+                    energy_cap_max: 1340000 # kWh
     aomori,iwate:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 17.3
+                    energy_cap_max: 17300000
     akita,iwate:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 0.66
+                    energy_cap_max: 660000
     akita,miyagi:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 9.04
+                    energy_cap_max: 9040000
     miyagi,iwate:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 27.1
+                    energy_cap_max: 27100000
     miyagi,yamagata:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 2.39
+                    energy_cap_max: 2390000
     miyagi,fukushima:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 10.4
+                    energy_cap_max: 10400000
     miyagi,niigata:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 3.77
+                    energy_cap_max: 3770000
     fukushima,yamagata:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 1.3
+                    energy_cap_max: 1300000
     niigata,yamagata:
         techs:
             ac_transmission:
                 constraints:
-                    energy_cap_max: 7.54
+                    energy_cap_max: 7540000
     # links-end
