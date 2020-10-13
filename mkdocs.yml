@@ -1,5 +1,12 @@
 site_name: Calliope-seminar
+site_url: https://tetsu26.github.io/Calliope-seminar
+site_author: Tetsushi Amano, Tenchi Suematsu
 copyright: Nakata Laboratory, Tohoku University 
+
+repo_name: tetsu26/Calliope-seminar
+repo_url: https://github.com/tetsu26/Calliope-seminar
+edit_uri: ""
+
 theme:
   name: material
   language: 'ja'
@@ -8,11 +15,14 @@ theme:
   icon:
     logo: material/school
     repo: fontawesome/brands/git-alt
+  
 
 nav:
   - README.md
   - chapter_1.md
   - chapter_2.md
+  - chapter_3.md
+  - chapter_4.md
 
 extra:
   search:
@@ -35,6 +45,7 @@ markdown_extensions:
   - def_list
   - pymdownx.smartsymbols
   - pymdownx.keys
+  - pymdownx.details
   - fontawesome_markdown
   - codehilite:
       linenums: true
