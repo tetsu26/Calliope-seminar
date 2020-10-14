@@ -6,7 +6,7 @@
 * [1日目資料](chapter_1.md)
 * [2日目資料](chapter_2.md)
 
-contact: [Nakata Lab](http://www.eff.most.tohoku.ac.jp/)
+contact: [Nakata Lab](http://www.eff.most.tohoku.ac.jp/){:target="_blank"}
 
 ## この文章のビルド方法
 
@@ -43,7 +43,7 @@ mkdocs build
 mkdocs serve
 ```
 
-上記コマンドを入力すると自動的にローカルサーバーが立てられ、初期設定では[http://127.0.0.1:8000](http://127.0.0.1:8000)にアクセスすれば作成したドキュメントが表示される。ドキュメントを保存すると自動的にビルドされ、更新される。
+上記コマンドを入力すると自動的にローカルサーバーが立てられ、初期設定では[http://127.0.0.1:8000](http://127.0.0.1:8000){:target="_blank"}にアクセスすれば作成したドキュメントが表示される。ドキュメントを保存すると自動的にビルドされ、更新される。
 
 ### AnacondaでPythonをインストールしている場合
 ```
@@ -62,4 +62,4 @@ conda activate <任意の仮想環境名>
 ```
 をパッケージのインストール前に実行すればよい。
 
-[参考にしたサイト](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c)
+[参考にしたサイト](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c){:target="_blank"}
