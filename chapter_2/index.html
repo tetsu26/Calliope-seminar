@@ -512,7 +512,7 @@
                 <h1 id="day-2">DAY 2</h1>
 <h2 id="1-calliope">1. Calliopeの概要</h2>
 <h3 id="11-calliope">1.1 Calliopeとは</h3>
-<p>Calliopeはチューリッヒ工科大により開発された、エネルギーシステムモデリングフレームワークである。モデルは、YAMLというファイル形式で記述される。セクターカップリングを前提に開発されたものではないが、柔軟に設定することができるので、セクターカップリング関係の研究にも用いることができる。ソルバーは外部依存で、GLPKやGurobi、CPLEXを使うことができる。公式ドキュメント(English)は<a href="https://calliope.readthedocs.io/en/stable/index.html">こちら</a>。</p>
+<p>Calliopeはチューリッヒ工科大により開発された、エネルギーシステムモデリングフレームワークである。モデルは、YAMLというファイル形式で記述される。セクターカップリングを前提に開発されたものではないが、柔軟に設定することができるので、セクターカップリング関係の研究にも用いることができる。ソルバーは外部依存で、GLPKやGurobi、CPLEXを使うことができる。公式ドキュメント(English)は<a href="https://calliope.readthedocs.io/en/stable/index.html" target="_blank">こちら</a>。</p>
 <p>Calliopeを使用したモデリングの基本的なプロセスは、3つのステップに基づく。</p>
 <ol>
 <li>
@@ -559,7 +559,7 @@
 <p>Calliopeの内部処理について紹介する。Calliopeは以下の図のようなフローで処理している。</p>
 <p><img alt="calliope_workflow" src="../images/calliope_workflow_basic.png" /></p>
 <p>Calliopeとはそもそも、入力されたデータを線形ソルバーでの最適化のために準備し、結果を分析・保存するためのソフトウェアである。データ入力は、次の入門ゼミ資料で取り上げるが、YAMLとCSVという形式で行われる。入力されたデータはruamel、pandas、xarrayといったライブラリで処理された後、Pyomoに渡される。Pyomoは最適化モデルを生成する、ソフトウェアパッケージであり、GAMSのようなシステムである。Pyomoは、処理したデータを最適化ソルバーが読める形式に変換し、外部の最適化ソルバー（Gurobi、CPELX、GLPKなど）に流す。最適化ソルバーから帰ってきた処理結果は再びpandasとxarrayによって処理されて出力される。また、Plotlyを使って可視化も行うことができる。</p>
-<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://calliope.readthedocs.io/en/stable/index.html">Calliope公式ドキュメンテーション</a></p>
+<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://calliope.readthedocs.io/en/stable/index.html" target="_blank">Calliope公式ドキュメンテーション</a></p>
 <h2 id="2-calliope">2. Calliope のチュートリアル</h2>
 <h3 id="21-yaml">2.1 YAMLの書き方</h3>
 <p>Calliopeの設定ファイルは、<code>YAML</code>（ヤムル）という形式で書かれている。この形式は、コンピュータにも人間にも読みやすいようにできており、<code>XML</code>や<code>JSON</code>といった形式と似たような役割である。拡張子は<code>.yml</code>か<code>.yaml</code>が用いられる。この入門資料では、Calliopeを回す際に知っておいたほうが良い部分のみ解説する。</p>
@@ -608,7 +608,7 @@
 <h3 id="22">2.2 実行ファイルの構造</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>詳しくは<a href="https://calliope.readthedocs.io/en/stable/user/building.html">公式ドキュメント</a>を参照されたい</p>
+<p>詳しくは<a href="https://calliope.readthedocs.io/en/stable/user/building.html" target="_blank">公式ドキュメント</a>を参照されたい</p>
 </div>
 <p>Calliopeの実行ファイルは、おおむね以下のような構造になっている。</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1

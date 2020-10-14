@@ -636,10 +636,10 @@ code test_model
 <p><code>calliope</code>コマンドでエラーが出る際は、<code>conda activate calliope</code>でcalliope環境に入ろう。</p>
 </div>
 <p>次にモデルで入力として使う、時系列データをダウンロードする。</p>
-<p><a href="https://drive.google.com/drive/folders/1l1DxK1kyN4VkEtbbML33_aez7rf5Yxu5?usp=sharing">[学内限定]ダウンロードリンク</a></p>
+<p><a href="https://drive.google.com/drive/folders/1l1DxK1kyN4VkEtbbML33_aez7rf5Yxu5?usp=sharing" target="_blank">[学内限定]ダウンロードリンク</a></p>
 <h2 id="modelyaml"><code>model.yaml</code>を編集</h2>
 <p><code>model.yaml</code>では、Calliopeの実行に関するすべてを設定する。以下三つに大きく分けて設定する。</p>
-<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://calliope.readthedocs.io/en/stable/user/config_defaults.html#config-reference-model">Calliope公式ドキュメント</a></p>
+<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://calliope.readthedocs.io/en/stable/user/config_defaults.html#config-reference-model" target="_blank">Calliope公式ドキュメント</a></p>
 <h3 id="import"><code>import</code></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -692,8 +692,8 @@ code test_model
 <p><code>zero_threshold</code>よりも小さい値はおそらく浮動小数点エラーであるため、削除する。</p>
 <p><code>mode</code>では最適化計算のモードを選択する。Calliopeには<code>plan</code>、<code>operate</code>、<code>spores</code>の三つのモードがある。planモードでは容量がモデルによって決定される、つまり、ゼロからエネルギーシステムを設計する際に適している。operateモードでは、容量は固定され、システムがモデル予測制御（MPC）によって運用される。つまり、既存の設備を用いたエネルギーシステムの最適化に適している。sporesモードでは、最初にplanモードで実行し、その後、似たようなコストだが、設備の容量と場所がもっとも異なる物を見つける。そのため、モデルはN回実行される。</p>
 <p>今回はsolverをgurobiに変更するのみで良い。</p>
-<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://myenigma.hatenablog.com/entry/2016/07/25/214014">MPCに関して深く知りたい方はこちら</a>
-<img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://orbit.dtu.dk/en/publications/model-predictive-control-for-smart-energy-systems-2">MPCとエネルギーシステム</a></p>
+<p><img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://myenigma.hatenablog.com/entry/2016/07/25/214014" target="_blank">MPCに関して深く知りたい方はこちら</a>
+<img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://orbit.dtu.dk/en/publications/model-predictive-control-for-smart-energy-systems-2" target="_blank">MPCとエネルギーシステム</a></p>
 <h2 id="techsyaml"><code>techs.yaml</code>を編集</h2>
 <p><code>techs.yaml</code>は<code>model_config</code>フォルダの中にある。</p>
 <h3 id="_3">技術の種類</h3>
@@ -737,7 +737,7 @@ code test_model
 </tbody>
 </table>
 <h3 id="_4">制約条件</h3>
-<p>Calliopeでは、各技術ノードに様々な制約条件を足すことができる。以下でよく使いそうな制約条件をいくつか説明するが、詳しくは<a href="https://calliope.readthedocs.io/en/stable/user/config_defaults.html">公式ドキュメント</a>を参考にしてほしい。</p>
+<p>Calliopeでは、各技術ノードに様々な制約条件を足すことができる。以下でよく使いそうな制約条件をいくつか説明するが、詳しくは<a href="https://calliope.readthedocs.io/en/stable/user/config_defaults.html" target="_blank">公式ドキュメント</a>を参考にしてほしい。</p>
 <h4 id="_5">技術に関して</h4>
 <table>
 <thead>
@@ -825,7 +825,7 @@ code test_model
 <div class="admonition note">
 <p class="admonition-title">割引率とは</p>
 <blockquote>
-<p>割引率とは、将来の価値を現在の価値に直すために用いる率のことをいいます。 利回りを考慮すれば現在の通貨の価値と将来の通貨の価値とでは価値が違うために、将来の通貨の価値を現在の通貨の価値に換算するために用いる率のことを指します。 <img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://www.shinnihon.or.jp/corporate-accounting/glossary/retirement-benefits/waribiki-ritu.html">出典</a></p>
+<p>割引率とは、将来の価値を現在の価値に直すために用いる率のことをいいます。 利回りを考慮すれば現在の通貨の価値と将来の通貨の価値とでは価値が違うために、将来の通貨の価値を現在の通貨の価値に換算するために用いる率のことを指します。 <img alt="ℹ️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/2139.svg" title=":information_source:" /> <a href="https://www.shinnihon.or.jp/corporate-accounting/glossary/retirement-benefits/waribiki-ritu.html" target="_blank">出典</a></p>
 </blockquote>
 <p>つまり、お金の価値は時代によって変わる（例えば今の10円と明治時代の10円では価値が全く違う）ので、それを補正するために割引率が設定される。</p>
 </div>
@@ -1348,8 +1348,8 @@ code test_model
 <ul>
 <li>上記のコードを然るべき場所にコピペして実行してみる。</li>
 <li>コピペのコードでは供給が需要を満たしていないので、発電所を足したりして需要を満たす。</li>
-<li>モデルをOperarional modeで実行してみて結果を比較する。<a href="https://calliope.readthedocs.io/en/stable/user/advanced_features.html#operational-mode">ヒント</a></li>
-<li>蓄電池や水素タンクなど、何か一つ電気を貯められる技術を導入する。<a href="https://calliope.readthedocs.io/en/stable/user/tutorials_01_national.html#storage-technologies">ヒント</a></li>
+<li>モデルをOperarional modeで実行してみて結果を比較する。<a href="https://calliope.readthedocs.io/en/stable/user/advanced_features.html#operational-mode" target="_blank">ヒント</a></li>
+<li>蓄電池や水素タンクなど、何か一つ電気を貯められる技術を導入する。<a href="https://calliope.readthedocs.io/en/stable/user/tutorials_01_national.html#storage-technologies" target="_blank">ヒント</a></li>
 </ul>
                 
               
