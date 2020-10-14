@@ -77,7 +77,7 @@
 $$
 CF = LF \times AF
 $$
-:information_source: [SBエナジー株式会社, みるみるわかるEnergy|エネルギー用語辞典](https://www.sbenergy.jp/study/dictionary/294.html)
+:information_source: [SBエナジー株式会社, みるみるわかるEnergy|エネルギー用語辞典](https://www.sbenergy.jp/study/dictionary/294.html){:target="_blank"}
 
 各発電技術における設備利用率の参考値は以下の通り。
 
@@ -113,6 +113,7 @@ $$
 で求められる。
 
 ### 2.3 電源構成（エネルギーミクス）
+<!-- あああああ -->
 
 電力需要は季節や時間によって刻々と変化するが、現状、大量に蓄電しておくことは難しいため、過不足がないように供給量を追随させる必要がある。このため、電力会社はエネルギー資源の特性を活かした電源構成で電力の供給を行っている。ここでいう「特性」とは様々な観点での分類が考えられるが、出力変動の可変性に応じて「ベースロード電源」、「ミドル電源」、「ピーク電源」がある。
 
@@ -124,34 +125,34 @@ $$
 
 `ピークロード(Peak load)電源`
 :    発電コストは高いが、出力変動が容易な電源。石油火力発電や揚水発電。
-:information_source: [エネルギーミックス｜エネルギー事情｜東京電力ホールディングス株式会社](https://www.tepco.co.jp/electricity/energy_situation/bestmix.html)
+:information_source: [エネルギーミックス｜エネルギー事情｜東京電力ホールディングス株式会社](https://www.tepco.co.jp/electricity/energy_situation/bestmix.html){:target="_blank"}
 
 
 ![energy_mix](images\CIYHnWyWgAANrVb.png)
 
-:information_source: [IEAのtwitter](https://twitter.com/iea/status/614186782335365120)
+:information_source: [IEAのtwitter](https://twitter.com/iea/status/614186782335365120){:target="_blank"}
 
 
-## 3. Calliope のインストール
+## 3. 環境構築
 
 ## 3.1 Anaconda のインストール
 
-Anaconda3をインストールする。[ここから](https://www.anaconda.com/products/individual)ダウンロードできる。
+Anaconda3をインストールする。[ここから](https://www.anaconda.com/products/individual){:target="_blank"}ダウンロードできる。
 
-PCにAnacondaをインストールしたら、Pythonパッケージのインストールに```pip```を使うと環境が破壊されてしまうことがあるので、```conda```を使うようにする。たいていのパッケージは```conda```でも提供されている。万が一```pip```コマンドでパッケージをインストールした後に環境が動かなくなった際は、Anacondaを再インストールすることが手っ取り早い解決策である。 [参考サイト](http://onoz000.hatenablog.com/entry/2018/02/11/142347)
+PCにAnacondaをインストールしたら、Pythonパッケージのインストールに```pip```を使うと環境が破壊されてしまうことがあるので、```conda```を使うようにする。たいていのパッケージは```conda```でも提供されている。万が一```pip```コマンドでパッケージをインストールした後に環境が動かなくなった際は、Anacondaを再インストールすることが手っ取り早い解決策である。 [参考サイト](http://onoz000.hatenablog.com/entry/2018/02/11/142347){:target="_blank"}
 
 
 ## 3.2 Visual Studio Code のインストール
 
-[ここから](https://code.visualstudio.com/)ダウンロードできる。どうしてもEmacsなど他のエディタがいい人は黙ってて。
+[ここから](https://code.visualstudio.com/){:target="_blank"}ダウンロードできる。どうしてもEmacsなど他のエディタがいい人は黙ってて。
 
-[Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)という拡張機能を入れるとUIが日本語になる。
+[Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)と{:target="_blank"}いう拡張機能を入れるとUIが日本語になる。
 
 ## 3.3 PowerShell の設定と基本的なコマンド
 
 ターミナルとしてPowerShellを使う。Windows環境ではコマンドプロンプトのほうがメジャーであるが、言語として古く、更新もされていないためお勧めしない。Mac & Linuxの人は標準のターミナルを使えば大丈夫。
 
-PowerShellはWindowsに最初からインストールされているため、インストールする必要はない。しかし、Windowsに同梱されているPowershellは最新版ではないので、気になる人は[ここから](https://github.com/PowerShell/PowerShell)最新版をダウンロード・インストールできる。
+PowerShellはWindowsに最初からインストールされているため、インストールする必要はない。しかし、Windowsに同梱されているPowershellは最新版ではないので、気になる人は[ここから](https://github.com/PowerShell/PowerShell){:target="_blank"}最新版をダウンロード・インストールできる。
 
 ### 3.3.1 PowerShell の設定
 
@@ -195,12 +196,6 @@ PowerShellの先頭に(calliope)が表示されていれば準備完了！
 
 ## 3.5 Gurobiのインストール
 
-Calliopeの実行には何かしらのソルバーが必要である。大学のPCにインストールするときは、[このサイト](https://qiita.com/keisukesato-ac/items/b0425a879622b99a2610)を参考にGurobiをインストールして、無償のアカデミックライセンスを取得すること。
+Calliopeの実行には何かしらのソルバーが必要である。大学のPCにインストールするときは、[このサイト](https://qiita.com/keisukesato-ac/items/b0425a879622b99a2610){:target="_blank"}を参考にGurobiをインストールして、無償のアカデミックライセンスを取得すること。
 
 Gurobiのアカデミックライセンスを取得できない時（大学LANからアクセスできないなど）は、CPLEXの学生版でもよい。
-
-<!-- test -->
-<!-- test -->
-<!-- test -->
-<!-- test -->
-

@@ -51,6 +51,7 @@ markdown_extensions:
       linenums: true
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - attr_list
 
 google_analytics:
   - 'UA-177930089-1'

@@ -4,7 +4,7 @@
 
 ### 1.1 Calliopeとは
 
-Calliopeはチューリッヒ工科大により開発された、エネルギーシステムモデリングフレームワークである。モデルは、YAMLというファイル形式で記述される。セクターカップリングを前提に開発されたものではないが、柔軟に設定することができるので、セクターカップリング関係の研究にも用いることができる。ソルバーは外部依存で、GLPKやGurobi、CPLEXを使うことができる。公式ドキュメント(English)は[こちら](https://calliope.readthedocs.io/en/stable/index.html)。
+Calliopeはチューリッヒ工科大により開発された、エネルギーシステムモデリングフレームワークである。モデルは、YAMLというファイル形式で記述される。セクターカップリングを前提に開発されたものではないが、柔軟に設定することができるので、セクターカップリング関係の研究にも用いることができる。ソルバーは外部依存で、GLPKやGurobi、CPLEXを使うことができる。公式ドキュメント(English)は[こちら](https://calliope.readthedocs.io/en/stable/index.html){:target="_blank"}。
 
 
 Calliopeを使用したモデリングの基本的なプロセスは、3つのステップに基づく。
@@ -60,7 +60,7 @@ Calliopeの内部処理について紹介する。Calliopeは以下の図のよ�
 
 Calliopeとはそもそも、入力されたデータを線形ソルバーでの最適化のために準備し、結果を分析・保存するためのソフトウェアである。データ入力は、次の入門ゼミ資料で取り上げるが、YAMLとCSVという形式で行われる。入力されたデータはruamel、pandas、xarrayといったライブラリで処理された後、Pyomoに渡される。Pyomoは最適化モデルを生成する、ソフトウェアパッケージであり、GAMSのようなシステムである。Pyomoは、処理したデータを最適化ソルバーが読める形式に変換し、外部の最適化ソルバー（Gurobi、CPELX、GLPKなど）に流す。最適化ソルバーから帰ってきた処理結果は再びpandasとxarrayによって処理されて出力される。また、Plotlyを使って可視化も行うことができる。
 
-:information_source: [Calliope公式ドキュメンテーション](https://calliope.readthedocs.io/en/stable/index.html)
+:information_source: [Calliope公式ドキュメンテーション](https://calliope.readthedocs.io/en/stable/index.html){:target="_blank"}
  
 ## 2. Calliope のチュートリアル
 
@@ -102,7 +102,7 @@ key1.key2: value
 ### 2.2 実行ファイルの構造
 
 !!!note 
-    詳しくは[公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/building.html)を参照されたい
+    詳しくは[公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/building.html){:target="_blank"}を参照されたい
 
 Calliopeの実行ファイルは、おおむね以下のような構造になっている。
 ```

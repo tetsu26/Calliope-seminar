@@ -20,12 +20,12 @@ code test_model
 
 次にモデルで入力として使う、時系列データをダウンロードする。
 
-[[学内限定]ダウンロードリンク](https://drive.google.com/drive/folders/1l1DxK1kyN4VkEtbbML33_aez7rf5Yxu5?usp=sharing)
+[[学内限定]ダウンロードリンク](https://drive.google.com/drive/folders/1l1DxK1kyN4VkEtbbML33_aez7rf5Yxu5?usp=sharing){:target="_blank"}
 
 ## `model.yaml`を編集
 `model.yaml`では、Calliopeの実行に関するすべてを設定する。以下三つに大きく分けて設定する。
 
-:information_source: [Calliope公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/config_defaults.html#config-reference-model)
+:information_source: [Calliope公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/config_defaults.html#config-reference-model){:target="_blank"}
 
 ### `import`
 
@@ -83,8 +83,8 @@ run:
 
 今回はsolverをgurobiに変更するのみで良い。
 
-:information_source: [MPCに関して深く知りたい方はこちら](https://myenigma.hatenablog.com/entry/2016/07/25/214014)
-:information_source: [MPCとエネルギーシステム](https://orbit.dtu.dk/en/publications/model-predictive-control-for-smart-energy-systems-2)
+:information_source: [MPCに関して深く知りたい方はこちら](https://myenigma.hatenablog.com/entry/2016/07/25/214014){:target="_blank"}
+:information_source: [MPCとエネルギーシステム](https://orbit.dtu.dk/en/publications/model-predictive-control-for-smart-energy-systems-2){:target="_blank"}
 
 ## `techs.yaml`を編集
 
@@ -106,7 +106,7 @@ Calliopeでは、技術をあらかじめ以下の7種に分類し、簡単に�
 
 ### 制約条件
 
-Calliopeでは、各技術ノードに様々な制約条件を足すことができる。以下でよく使いそうな制約条件をいくつか説明するが、詳しくは[公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/config_defaults.html)を参考にしてほしい。
+Calliopeでは、各技術ノードに様々な制約条件を足すことができる。以下でよく使いそうな制約条件をいくつか説明するが、詳しくは[公式ドキュメント](https://calliope.readthedocs.io/en/stable/user/config_defaults.html){:target="_blank"}を参考にしてほしい。
 
 #### 技術に関して
 | よく使いそうな制約条件 | 単位 | 説明 |
@@ -129,7 +129,7 @@ Calliopeでは、各技術ノードに様々な制約条件を足すことがで
 | `om_prod` | /kWh | キャリアをproductionするのに要する費用、再エネ発電などで用いられる |
 
 !!! Note "割引率とは"
-    > 割引率とは、将来の価値を現在の価値に直すために用いる率のことをいいます。 利回りを考慮すれば現在の通貨の価値と将来の通貨の価値とでは価値が違うために、将来の通貨の価値を現在の通貨の価値に換算するために用いる率のことを指します。 :information_source: [出典](https://www.shinnihon.or.jp/corporate-accounting/glossary/retirement-benefits/waribiki-ritu.html)
+    > 割引率とは、将来の価値を現在の価値に直すために用いる率のことをいいます。 利回りを考慮すれば現在の通貨の価値と将来の通貨の価値とでは価値が違うために、将来の通貨の価値を現在の通貨の価値に換算するために用いる率のことを指します。 :information_source: [出典](https://www.shinnihon.or.jp/corporate-accounting/glossary/retirement-benefits/waribiki-ritu.html){:target="_blank"}
 
     つまり、お金の価値は時代によって変わる（例えば今の10円と明治時代の10円では価値が全く違う）ので、それを補正するために割引率が設定される。
 
@@ -424,5 +424,5 @@ links:
 
 * 上記のコードを然るべき場所にコピペして実行してみる。
 * コピペのコードでは供給が需要を満たしていないので、発電所を足したりして需要を満たす。
-* モデルをOperarional modeで実行してみて結果を比較する。[ヒント](https://calliope.readthedocs.io/en/stable/user/advanced_features.html#operational-mode)
-* 蓄電池や水素タンクなど、何か一つ電気を貯められる技術を導入する。[ヒント](https://calliope.readthedocs.io/en/stable/user/tutorials_01_national.html#storage-technologies)
+* モデルをOperarional modeで実行してみて結果を比較する。[ヒント](https://calliope.readthedocs.io/en/stable/user/advanced_features.html#operational-mode){:target="_blank"}
+* 蓄電池や水素タンクなど、何か一つ電気を貯められる技術を導入する。[ヒント](https://calliope.readthedocs.io/en/stable/user/tutorials_01_national.html#storage-technologies){:target="_blank"}
