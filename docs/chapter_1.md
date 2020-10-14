@@ -185,7 +185,7 @@ PowerShellのコマンド（正式にはコマンドレットと呼ぶ）は、`
 
 PowerShellを開き、以下のコマンドを実行する。
 ```
-conda create -c conda-forge -n calliope calliope
+conda create -n calliope -c conda-forge calliope=0.6.5 pyutilib=5.8.0
 ```
 
 Calliopeを使うときは以下のコマンドを入力してcalliope環境を起動する。
